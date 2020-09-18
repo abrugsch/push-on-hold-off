@@ -1,3 +1,4 @@
+![schematic](othermod GIPO controlled advanced shutdown.png)
 
 Othermod:
 The OS is watching the pin attached to GP1, so pressing the button issues the shutdown command. After shutdown completes, GP2 is pulled low by the OS. It's attached to a p-mosfet because the pin is only weakly pulled low. This causes the 10uf capacitor to charge, pulling the gate n-mosfet part of the dual mosfet low. This causes everything to shut off once the gate pin pulls low enough.
